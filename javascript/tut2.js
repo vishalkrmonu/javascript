@@ -1,7 +1,7 @@
 // ------day:9------
-console.log("-----day:9----");
+console.log("-----day:9----")
 
-//primitive
+//primitive 
 
 // 7type : String,NUmber ,Boolean, null, undefined,symbol,BigInt
 
