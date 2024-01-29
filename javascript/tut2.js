@@ -38,3 +38,22 @@ console.log(typeof anotherId);
 
 // ------day:10------
 console.log("-----day:10----");
+// Stack(Primitive) :refrence:copy
+// Heap(Non-Primitive): refrence:address
+
+let myYoutubename="vishalkrmonu"
+
+let anothername=myYoutubename
+anothername="chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+userTwo.email="vishal@gamil.com"
+console.log(userOne.email);
+console.log(userTwo.email);
