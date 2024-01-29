@@ -10,7 +10,6 @@ let userEmail;
 console.log(score);
 
 const id=Symbol('123')
-console.log(id);
 const anotherId =Symbol('123')
 console.log(anotherId);
 console.log(id===anotherId);
@@ -29,6 +28,6 @@ const myFunction=function(){
     console.log("hello world");
 }
 
-//typeof:id,anotherId,bigNumber
+//typeof:id,anotherId,bigNumber 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 console.log(typeof anotherId);
