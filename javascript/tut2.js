@@ -1,3 +1,6 @@
+// ------day:9------
+console.log("-----day:9----");
+
 //primitive
 
 // 7type : String,NUmber ,Boolean, null, undefined,symbol,BigInt
@@ -31,3 +34,7 @@ const myFunction=function(){
 //typeof:id,anotherId,bigNumber 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 console.log(typeof anotherId);
+
+
+// ------day:10------
+console.log("-----day:10----");
