@@ -1,3 +1,5 @@
+// npx create-react-app day1   
+
 //day4:varible
 console.log("----day4-----");
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
