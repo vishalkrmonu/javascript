@@ -27,7 +27,7 @@ console.log(JsUser[mySym]);
 console.log(typeof JsUser.mySym);  
 
 JsUser.email="monu@gmail.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser) //aage koi change nhi kr skta hai actual data me
 JsUser.email="sonu@gmail.com"
 console.log(JsUser);
 
