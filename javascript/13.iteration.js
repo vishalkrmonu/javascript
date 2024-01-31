@@ -80,4 +80,4 @@ let index =0;
     console.log(`Score is ${score}`);
     score++
  }
- while(score<=10)
+ while(score<=10); 
