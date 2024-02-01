@@ -1,4 +1,4 @@
-
+// ------day:24-iife-----
 //Immediately invoked function expressions (IIFE)
 
 
@@ -14,3 +14,7 @@
 
 
 //two iife ek sath likhna hai toh semicolumn use kre
+
+
+//day:25-code excuted and call stack
+//copy me hai 
