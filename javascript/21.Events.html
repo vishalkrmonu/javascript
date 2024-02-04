@@ -9,21 +9,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur mai</h1>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">start</button>
     <button id="stop">stop</button>
 </body>
 <script>
-    const sayVishal=function(){
-        console.log("vishal");
+    const sayDate=function(str){
+        console.log(str,Date.now());
     }
-    const changeText=function(){
-        document.querySelector('h1').innerHTML="best js coding"
-    }
-
-    const changeMe=setTimeout(changeText,2000)
-    document.querySelector('#stop').addEventListener('click',function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED");
-    })
+    const IntervalId=setInterval(sayDate,1000,"hi")
+    clearInterval(IntervalId)
 </script>
 </html>
