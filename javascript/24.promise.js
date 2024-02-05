@@ -1,4 +1,6 @@
 // ----day:40--promise
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
 
 const promiseOne = new Promise(function (resolve, reject) {
     //Do an async task
@@ -104,3 +106,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log(data);
 })
 .catch((error) => console.log(error))
+
+
+//fetch
+// https://blog.logrocket.com/fetch-api-node-js/#introducing-fetch-api
