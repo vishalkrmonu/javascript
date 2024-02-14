@@ -12,7 +12,9 @@ in closures give you access to an outer function scope from an inner function
     <title>Closures aur chai</title>
 </head>
 
-<body>
+<body style="background-color: #313131;">
+<button id="orange">Orange</button>
+<button id="green">Green</button>
 
 </body>
 <script>
@@ -56,10 +58,30 @@ function makeFunc() {
             // displayName() is the inner function, that forms the closure
             console.log(name); // use variable declared in the parent function
         }
-       return displayName;
+       return displayName; //jab function return krte ho to pura function ke sath pura scope bhi return krta hai
     }
     const myFunc=makeFunc();
     myFunc();
+</script>
+
+<script>
+//   document.getElementById("orange").onclick=function(){
+//     document.body.style.background=`orange`
+//   }
+//   document.getElementById("green").onclick=function(){
+//     document.body.style.background=`green`
+//   }
+
+function clickHandler(color){
+//     document.body.style.background=`orange`
+
+return function(){
+    document.body.style.background=`${color}`
+
+}
+}
+  document.getElementById("green").onclick=clickHandler("green")
+  document.getElementById("orange").onclick=clickHandler("orange")
 
 
 
