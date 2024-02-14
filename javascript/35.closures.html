@@ -1,0 +1,68 @@
+<!--  a closures is combination of function 
+in closures give you access to an outer function scope from an inner function
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures aur chai</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; // name is a local variable created by init
+    //     function displayName() {
+    //         // displayName() is the inner function, that forms the closure
+    //         console.log(name); // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+
+    // function ke andar jitna bhi funtion rahega sab ko call kr sakte hai as a child
+    //child me access nhi kr sakte hai 
+    // function outer() {
+    //     let username = "vishal"
+    //     console.log("OUTER",secret);
+    //     function inner() {
+    //         let secret="my123"
+    //         console.log("inner",username); //console me dekhna 
+    //     }
+    //     function innerTwo() {
+    //         console.log("innerTwo",username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer() //ye call nhi hoga because variable ko function ke bahar likhna hota hai
+    // console.log("TOO OUTER ", username);
+
+
+
+
+function makeFunc() {
+        let name = "Mozilla"; // name is a local variable created by init
+        function displayName() {
+            // displayName() is the inner function, that forms the closure
+            console.log(name); // use variable declared in the parent function
+        }
+       return displayName;
+    }
+    const myFunc=makeFunc();
+    myFunc();
+
+
+
+</script>
+
+</html>
